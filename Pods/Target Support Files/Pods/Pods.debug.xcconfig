@@ -1,0 +1,7 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AdbladeSDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AdbladeSDK" "${PODS_ROOT}/Headers/Public/AdbladeSDK/AdbladeSDK"
+LD_RUNPATH_SEARCH_PATHS = @loader_path/../Frameworks
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AdbladeSDK" -isystem "${PODS_ROOT}/Headers/Public/AdbladeSDK/AdbladeSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "AdbladeSDK"
+PODS_ROOT = ${SRCROOT}/Pods
