@@ -1,1 +1,0 @@
-../../../../AdbladeSDK/AdbladeSDK.framework/Headers/AdbladeSDK-Swift.h
