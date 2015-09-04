@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -76,7 +76,7 @@
                         <viewControllerLayoutGuide type="top" id="6eI-3w-yVS"/>
                         <viewControllerLayoutGuide type="bottom" id="CPH-8t-f61"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5Ay-iF-XLy">
+                    <view key="view" contentMode="scaleToFill" id="5Ay-iF-XLy" customClass="AdbladeInterstitialView" customModule="AdbladeSDK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,7 +89,7 @@
         <!--Interstitial-->
         <scene sceneID="2OQ-lV-zLS">
             <objects>
-                <viewController id="NQx-rU-QWz" sceneMemberID="viewController">
+                <viewController id="NQx-rU-QWz" customClass="ButtonViewController" customModule="ios_sdk_swift_example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Qg-tg-gLA"/>
                         <viewControllerLayoutGuide type="bottom" id="B2z-Mf-HdX"/>
@@ -98,13 +98,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-hQ-yrR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="banner" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-hQ-yrR">
                                 <rect key="frame" x="16" y="231" width="261" height="30"/>
-                                <state key="normal" title="Click to open ad">
+                                <state key="normal" title="Click to open banner ad">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="smb-t6-5q0" kind="presentation" id="cKI-Kx-Vzv"/>
+                                    <segue destination="smb-t6-5q0" kind="presentation" identifier="banner" id="cKI-Kx-Vzv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xof-54-vo4">
+                                <rect key="frame" x="16" y="269" width="261" height="30"/>
+                                <state key="normal" title="Click to open rich media ad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="smb-t6-5q0" kind="presentation" identifier="richMedia" id="P34-FJ-STj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCT-6o-z3K">
+                                <rect key="frame" x="16" y="307" width="261" height="30"/>
+                                <state key="normal" title="Click to open slideshow ad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="smb-t6-5q0" kind="presentation" identifier="slideshow" id="adE-Yg-1kg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,4 +139,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="adE-Yg-1kg"/>
+    </inferredMetricsTieBreakers>
 </document>
