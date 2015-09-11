@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300795371BA204AA00781BAD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300795361BA204AA00781BAD /* TableViewController.swift */; };
+		3007953B1BA2155200781BAD /* AdbladeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3007953A1BA2155200781BAD /* AdbladeViewController.swift */; };
 		303983601B752DD9003F5EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3039835F1B752DD9003F5EB2 /* AppDelegate.swift */; };
 		303983671B752DD9003F5EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303983651B752DD9003F5EB2 /* Main.storyboard */; };
 		303983691B752DD9003F5EB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303983681B752DD9003F5EB2 /* Images.xcassets */; };
-		308CE00B1B99E25D006E7689 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CE00A1B99E25D006E7689 /* ButtonViewController.swift */; };
 		30B61CA71B792DCC000ADFC3 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B61CA61B792DCC000ADFC3 /* BannerViewController.swift */; };
 		30B61CA91B792F72000ADFC3 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B61CA81B792F72000ADFC3 /* NativeViewController.swift */; };
 		30B61CAD1B79330E000ADFC3 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B61CAC1B79330E000ADFC3 /* InterstitialViewController.swift */; };
@@ -18,12 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300795361BA204AA00781BAD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3007953A1BA2155200781BAD /* AdbladeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdbladeViewController.swift; sourceTree = "<group>"; };
 		3039835A1B752DD9003F5EB2 /* ios-sdk-swift-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-sdk-swift-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3039835E1B752DD9003F5EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3039835F1B752DD9003F5EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		303983661B752DD9003F5EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		303983681B752DD9003F5EB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		308CE00A1B99E25D006E7689 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		30B61CA61B792DCC000ADFC3 /* BannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		30B61CA81B792F72000ADFC3 /* NativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		30B61CAC1B79330E000ADFC3 /* InterstitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
@@ -68,11 +70,12 @@
 				3039835F1B752DD9003F5EB2 /* AppDelegate.swift */,
 				303983651B752DD9003F5EB2 /* Main.storyboard */,
 				303983681B752DD9003F5EB2 /* Images.xcassets */,
-				3039835D1B752DD9003F5EB2 /* Supporting Files */,
+				3007953A1BA2155200781BAD /* AdbladeViewController.swift */,
 				30B61CA61B792DCC000ADFC3 /* BannerViewController.swift */,
 				30B61CA81B792F72000ADFC3 /* NativeViewController.swift */,
 				30B61CAC1B79330E000ADFC3 /* InterstitialViewController.swift */,
-				308CE00A1B99E25D006E7689 /* ButtonViewController.swift */,
+				300795361BA204AA00781BAD /* TableViewController.swift */,
+				3039835D1B752DD9003F5EB2 /* Supporting Files */,
 			);
 			path = "ios-sdk-swift-example";
 			sourceTree = "<group>";
@@ -207,9 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B61CAD1B79330E000ADFC3 /* InterstitialViewController.swift in Sources */,
+				300795371BA204AA00781BAD /* TableViewController.swift in Sources */,
 				30B61CA91B792F72000ADFC3 /* NativeViewController.swift in Sources */,
 				303983601B752DD9003F5EB2 /* AppDelegate.swift in Sources */,
-				308CE00B1B99E25D006E7689 /* ButtonViewController.swift in Sources */,
+				3007953B1BA2155200781BAD /* AdbladeViewController.swift in Sources */,
 				30B61CA71B792DCC000ADFC3 /* BannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

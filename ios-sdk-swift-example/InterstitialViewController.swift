@@ -2,7 +2,7 @@ import UIKit
 import AdbladeSDK
 
 // example interstitial view
-class InterstitialViewController: UIViewController, AdbladeDelegate {
+class InterstitialViewController: UIViewController, AdbladeViewController, AdbladeDelegate {
     internal var containerId: String = ""
     internal var adType: AdbladeAdType = .mediumRectangle
     
