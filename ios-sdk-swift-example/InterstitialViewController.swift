@@ -11,6 +11,7 @@ class InterstitialViewController: UIViewController, AdbladeViewController, Adbla
         
         // make a new ad view and set it as this controller's view
         let abView: AdbladeInterstitialView = AdbladeViewFactory.createView(self.containerId, adType: self.adType, delegate: self) as! AdbladeInterstitialView
+        abView.loadAd()
         self.view = abView
     }
     

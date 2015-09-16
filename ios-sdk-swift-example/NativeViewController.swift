@@ -16,6 +16,7 @@ class NativeViewController: UIViewController, AdbladeViewController {
         self.view.addSubview(button)
         
         let abView: AdbladeNativeView = AdbladeViewFactory.createView(self.containerId, adType: self.adType, delegate: nil) as! AdbladeNativeView
+        abView.loadAd()
         
         abView.center = self.view.center
         

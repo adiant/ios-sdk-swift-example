@@ -1,10 +1,10 @@
 PODS:
-  - AdbladeSDK (1.2.0)
+  - AdbladeSDK (1.2.1)
 
 DEPENDENCIES:
   - AdbladeSDK
 
 SPEC CHECKSUMS:
-  AdbladeSDK: d93b3c3aa088377f3a2a65fef89189b39b8cbbe5
+  AdbladeSDK: 2d52fa7ff257ed932dfb7613e66bc8cce430a66d
 
 COCOAPODS: 0.38.2
