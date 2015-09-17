@@ -16,6 +16,8 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+ios-sdk-swift-example.xcworkspace/xcshareddata/
+
 
 # CocoaPods
 #

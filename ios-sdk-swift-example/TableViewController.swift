@@ -1,7 +1,7 @@
 import UIKit
 import AdbladeSDK
 
-class TableViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+class TableViewController: UITableViewController {
     struct BannerData {
         let name: String
         let containerId: String
@@ -25,7 +25,7 @@ class TableViewController: UITableViewController, UITableViewDelegate, UITableVi
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
 
         cell.textLabel?.text = self.items[indexPath.section][indexPath.row].name
         
@@ -33,7 +33,7 @@ class TableViewController: UITableViewController, UITableViewDelegate, UITableVi
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var bannerData: BannerData = self.items[indexPath.section][indexPath.row]
+        let bannerData: BannerData = self.items[indexPath.section][indexPath.row]
         
         let viewController: AdbladeViewController?
         

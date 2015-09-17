@@ -17,6 +17,6 @@ class InterstitialViewController: UIViewController, AdbladeViewController, Adbla
     
     func didHaveError(view: AdbladeView, error: AdbladeError) {
         // you probably want to do something better here
-        println(error)
+        print(error)
     }
 }

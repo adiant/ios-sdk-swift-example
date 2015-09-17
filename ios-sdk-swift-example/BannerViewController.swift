@@ -25,7 +25,7 @@ class BannerViewController: UIViewController, AdbladeViewController, AdbladeDele
     
     func didHaveError(view: AdbladeView, error: AdbladeError) {
         // normally, you would want to do something here other than print the error
-        println(error)
+        print(error)
     }
     
     func didReceiveAd(view: AdbladeView) {
